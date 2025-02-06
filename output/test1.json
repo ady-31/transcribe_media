@@ -1,0 +1,102 @@
+{
+    "text": " P P P P P P",
+    "segments": [
+        {
+            "id": 0,
+            "seek": 18000,
+            "start": 180.0,
+            "end": 180.06,
+            "text": " P",
+            "tokens": [
+                50364,
+                430,
+                50367
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -2.979186248779297,
+            "compression_ratio": 0.9166666666666666,
+            "no_speech_prob": 0.571892499923706
+        },
+        {
+            "id": 1,
+            "seek": 18000,
+            "start": 192.48,
+            "end": 193.48,
+            "text": " P",
+            "tokens": [
+                50988,
+                430,
+                51038
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -2.979186248779297,
+            "compression_ratio": 0.9166666666666666,
+            "no_speech_prob": 0.571892499923706
+        },
+        {
+            "id": 2,
+            "seek": 18000,
+            "start": 193.48,
+            "end": 194.68,
+            "text": " P",
+            "tokens": [
+                51038,
+                430,
+                51098
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -2.979186248779297,
+            "compression_ratio": 0.9166666666666666,
+            "no_speech_prob": 0.571892499923706
+        },
+        {
+            "id": 3,
+            "seek": 18000,
+            "start": 194.68,
+            "end": 195.48,
+            "text": " P",
+            "tokens": [
+                51098,
+                430,
+                51138
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -2.979186248779297,
+            "compression_ratio": 0.9166666666666666,
+            "no_speech_prob": 0.571892499923706
+        },
+        {
+            "id": 4,
+            "seek": 18000,
+            "start": 195.48,
+            "end": 195.7,
+            "text": " P",
+            "tokens": [
+                51138,
+                430,
+                51149
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -2.979186248779297,
+            "compression_ratio": 0.9166666666666666,
+            "no_speech_prob": 0.571892499923706
+        },
+        {
+            "id": 5,
+            "seek": 18000,
+            "start": 195.7,
+            "end": 208.7,
+            "text": " P",
+            "tokens": [
+                51149,
+                430,
+                51799
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -2.979186248779297,
+            "compression_ratio": 0.9166666666666666,
+            "no_speech_prob": 0.571892499923706
+        }
+    ],
+    "language": "km"
+}

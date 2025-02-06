@@ -17,7 +17,7 @@ def transcribe_media(media_dir, output_dir=None):
                 print(f"File exists: {os.path.exists(media_path)}")
                 base_name = os.path.splitext(file)[0]
                 if output_dir is None:
-                    output_dir = os.path.abspath(media_dir) # Make output_dir absolute if needed
+                    output_dir = os.path.abspath(media_dir) 
                 output_path_txt = os.path.abspath(os.path.join(output_dir, f"{base_name}.txt"))  # Absolute path here too!
                 output_path_json = os.path.abspath(os.path.join(output_dir, f"{base_name}.json"))  # And here!
                 try:

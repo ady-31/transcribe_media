@@ -37,7 +37,7 @@ def transcribe_media(media_dir, output_dir=None):
 
                 except Exception as e:
                     print(f"Error transcribing {media_path}: {e}")
-            elif file.lower().endswith(('.jpg', '.jpeg', '.png', '.gif')): # Handle Image or other files gracefully
+            elif file.lower().endswith(('.jpg', '.jpeg', '.png', '.gif')):
                 print(f"Skipping non-media file: {file}")
             else:
                 print(f"Unsupported file type: {file}")

@@ -47,7 +47,7 @@ if __name__ == "__main__":
     media_directory = os.path.abspath(media_directory) 
     output_directory = input("Enter the output directory (or press Enter to use the same directory): ")
     if not output_directory:
-        output_directory = media_directory # Use the same (absolute) path
+        output_directory = media_directory 
     else:
         output_directory = os.path.abspath(output_directory) # Make sure output_dir is also absolute
     transcribe_media(media_directory, output_directory)

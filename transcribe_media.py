@@ -23,9 +23,6 @@ def transcribe_media(media_dir, output_dir=None):
                 try:
                    
                     
-                    # audio = whisper.pad_or_crop(y, whisper.audio.SAMPLE_RATE)
-
-                    # Transcribe
                     result = model.transcribe(media_path)
 
                     # Save as text

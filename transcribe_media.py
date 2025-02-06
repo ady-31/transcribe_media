@@ -49,6 +49,6 @@ if __name__ == "__main__":
     if not output_directory:
         output_directory = media_directory 
     else:
-        output_directory = os.path.abspath(output_directory) # Make sure output_dir is also absolute
+        output_directory = os.path.abspath(output_directory) 
     transcribe_media(media_directory, output_directory)
     print("Transcription complete.")

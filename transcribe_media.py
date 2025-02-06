@@ -44,7 +44,7 @@ def transcribe_media(media_dir, output_dir=None):
 
 if __name__ == "__main__":
     media_directory = input("Enter the directory containing media files: ")
-    media_directory = os.path.abspath(media_directory) # Convert input to absolute path
+    media_directory = os.path.abspath(media_directory) 
     output_directory = input("Enter the output directory (or press Enter to use the same directory): ")
     if not output_directory:
         output_directory = media_directory # Use the same (absolute) path

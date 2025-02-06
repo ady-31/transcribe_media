@@ -22,7 +22,7 @@ def transcribe_media(media_dir, output_dir=None):
                 output_path_json = os.path.abspath(os.path.join(output_dir, f"{base_name}.json")) 
                 try:
                    
-                    # y, sr = librosa.load(media_path, sr=None)  # Alternative, but ffmpeg is more robust
+                    
                     # audio = whisper.pad_or_crop(y, whisper.audio.SAMPLE_RATE)
 
                     # Transcribe

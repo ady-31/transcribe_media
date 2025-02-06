@@ -31,7 +31,7 @@ def transcribe_media(media_dir, output_dir=None):
 
                     # Save as JSON
                     with open(output_path_json, "w", encoding="utf-8") as f:
-                        json.dump(result, f, indent=4, ensure_ascii=False)  # ensure_ascii handles special characters
+                        json.dump(result, f, indent=4, ensure_ascii=False) 
 
                     print(f"Transcribed: {media_path}")
 

@@ -4,8 +4,7 @@ import ffmpeg
 import json
 
 def transcribe_media(media_dir, output_dir=None):
-    model = whisper.load_model("tiny")  # Use the smallest model
-
+    model = whisper.load_model("tiny")  
     if output_dir is None:
         output_dir = media_dir  # Default to same directory
 

@@ -12,7 +12,7 @@ def transcribe_media(media_dir, output_dir=None):
     for root, _, files in os.walk(media_dir):
         for file in files:
             if file.lower().endswith(('.mp3', '.mp4', '.wav', '.mov', '.avi', '.webm')):
-                media_path = os.path.abspath(os.path.join(root, file))  # Absolute path (GOOD!)
+                media_path = os.path.abspath(os.path.join(root, file)) 
                 print(f"Attempting to transcribe: {media_path}")
                 print(f"File exists: {os.path.exists(media_path)}")
                 base_name = os.path.splitext(file)[0]

@@ -18,10 +18,10 @@ def transcribe_media(media_dir, output_dir=None):
                 base_name = os.path.splitext(file)[0]
                 if output_dir is None:
                     output_dir = os.path.abspath(media_dir) 
-                output_path_txt = os.path.abspath(os.path.join(output_dir, f"{base_name}.txt"))  # Absolute path here too!
-                output_path_json = os.path.abspath(os.path.join(output_dir, f"{base_name}.json"))  # And here!
+                output_path_txt = os.path.abspath(os.path.join(output_dir, f"{base_name}.txt")) 
+                output_path_json = os.path.abspath(os.path.join(output_dir, f"{base_name}.json")) 
                 try:
-                    # Load audio using ffmpeg to handle potential format issues
+                   
                     # y, sr = librosa.load(media_path, sr=None)  # Alternative, but ffmpeg is more robust
                     # audio = whisper.pad_or_crop(y, whisper.audio.SAMPLE_RATE)
 

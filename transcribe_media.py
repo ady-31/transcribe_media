@@ -5,8 +5,9 @@ import json
 
 def transcribe_media(media_dir, output_dir=None):
     model = whisper.load_model("tiny")  
+
     if output_dir is None:
-        output_dir = media_dir  # Default to same directory
+        output_dir = media_dir 
 
     for root, _, files in os.walk(media_dir):
         for file in files:

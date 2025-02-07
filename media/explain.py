@@ -5,12 +5,13 @@ import json # Used to store transcription results in JSON format.
 
 def transcribe_media(media_dir, output_dir=None): # Directory containing media files (audio/video).
    # Directory where transcriptions will be saved (defaults to media_dir).
+
     model = whisper.load_model("tiny")  # Loads the "tiny" version of Whisper (a lightweight model for transcription).
 
     if output_dir is None:
         output_dir = media_dir 
 
-    for root, _, files in os.walk(media_dir):
+    for root, _, files in os.walk(media_dir): # os.walk(media_dir): Recursively traverses all files in media_dir.
         for file in files:
             if file.lower().endswith(('.mp3', '.mp4', '.wav', '.mov', '.avi', '.webm')):
                 media_path = os.path.abspath(os.path.join(root, file)) 

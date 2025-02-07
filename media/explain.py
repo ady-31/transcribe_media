@@ -13,15 +13,16 @@ def transcribe_media(media_dir, output_dir=None): # Directory containing media f
 
     for root, _, files in os.walk(media_dir): # os.walk(media_dir): Recursively traverses all files in media_dir.
         for file in files:
-            if file.lower().endswith(('.mp3', '.mp4', '.wav', '.mov', '.avi', '.webm')):
-                media_path = os.path.abspath(os.path.join(root, file)) 
-                print(f"Attempting to transcribe: {media_path}")
+            if file.lower().endswith(('.mp3', '.mp4', '.wav', '.mov', '.avi', '.webm')):# Filters audio/video files based on their extensions.
+                media_path = os.path.abspath(os.path.join(root, file)) # Gets the absolute path of the media file.
+                print(f"Attempting to transcribe: {media_path}") # Prints debug messages to confirm file processing.
                 print(f"File exists: {os.path.exists(media_path)}")
-                base_name = os.path.splitext(file)[0]
+
+                base_name = os.path.splitext(file)[0] #Extracts the file name (without extension).
                 if output_dir is None:
                     output_dir = os.path.abspath(media_dir) 
-                output_path_txt = os.path.abspath(os.path.join(output_dir, f"{base_name}.txt")) 
-                output_path_json = os.path.abspath(os.path.join(output_dir, f"{base_name}.json")) 
+                output_path_txt = os.path.abspath(os.path.join(output_dir, f"{base_name}.txt")) #  Plain text transcription.
+                output_path_json = os.path.abspath(os.path.join(output_dir, f"{base_name}.json")) # Detailed JSON transcription.
                 try:
                    
                     

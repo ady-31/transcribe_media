@@ -55,4 +55,4 @@ if __name__ == "__main__": # Ensures that the script runs only when executed dir
     else:
         output_directory = os.path.abspath(output_directory) # Uses the same directory as media files if the user presses Enter.
     transcribe_media(media_directory, output_directory) # Calls transcribe_media() with user-specified paths.
-    print("Transcription complete.")
+    print("Transcription complete.") # Prints completion message.

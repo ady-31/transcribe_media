@@ -26,7 +26,7 @@ def transcribe_media(media_dir, output_dir=None): # Directory containing media f
                 try:
                    
                     
-                    result = model.transcribe(media_path)
+                    result = model.transcribe(media_path) # Uses Whisper to transcribe the audio/video file.
 
                     # Save as text
                     with open(output_path_txt, "w", encoding="utf-8") as f:
@@ -38,7 +38,7 @@ def transcribe_media(media_dir, output_dir=None): # Directory containing media f
 
                     print(f"Transcribed: {media_path}")
 
-                except Exception as e:
+                except Exception as e: # Catches errors (e.g., unsupported file format, corrupted media).
                     print(f"Error transcribing {media_path}: {e}")
             elif file.lower().endswith(('.jpg', '.jpeg', '.png', '.gif')):
                 print(f"Skipping non-media file: {file}")

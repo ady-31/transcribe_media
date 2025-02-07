@@ -49,7 +49,8 @@ if __name__ == "__main__": # Ensures that the script runs only when executed dir
     media_directory = input("Enter the directory containing media files: ")
     media_directory = os.path.abspath(media_directory) # Asks the user for the media directory and converts it to an absolute path.
     output_directory = input("Enter the output directory (or press Enter to use the same directory): ")
-    if not output_directory:
+
+    if not output_directory: # Asks for an output directory.
         output_directory = media_directory 
     else:
         output_directory = os.path.abspath(output_directory) 

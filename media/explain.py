@@ -40,10 +40,10 @@ def transcribe_media(media_dir, output_dir=None): # Directory containing media f
 
                 except Exception as e: # Catches errors (e.g., unsupported file format, corrupted media).
                     print(f"Error transcribing {media_path}: {e}")
-            elif file.lower().endswith(('.jpg', '.jpeg', '.png', '.gif')):
+            elif file.lower().endswith(('.jpg', '.jpeg', '.png', '.gif')): # Skips image files.
                 print(f"Skipping non-media file: {file}")
             else:
-                print(f"Unsupported file type: {file}")
+                print(f"Unsupported file type: {file}") # 
 
 if __name__ == "__main__":
     media_directory = input("Enter the directory containing media files: ")

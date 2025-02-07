@@ -43,7 +43,7 @@ def transcribe_media(media_dir, output_dir=None): # Directory containing media f
             elif file.lower().endswith(('.jpg', '.jpeg', '.png', '.gif')): # Skips image files.
                 print(f"Skipping non-media file: {file}")
             else:
-                print(f"Unsupported file type: {file}") # 
+                print(f"Unsupported file type: {file}") # Prints a message for unsupported file types.
 
 if __name__ == "__main__":
     media_directory = input("Enter the directory containing media files: ")

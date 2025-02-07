@@ -45,7 +45,7 @@ def transcribe_media(media_dir, output_dir=None): # Directory containing media f
             else:
                 print(f"Unsupported file type: {file}") # Prints a message for unsupported file types.
 
-if __name__ == "__main__":
+if __name__ == "__main__": # Ensures that the script runs only when executed directly (not when imported as a module).
     media_directory = input("Enter the directory containing media files: ")
     media_directory = os.path.abspath(media_directory) 
     output_directory = input("Enter the output directory (or press Enter to use the same directory): ")

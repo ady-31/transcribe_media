@@ -47,7 +47,7 @@ def transcribe_media(media_dir, output_dir=None): # Directory containing media f
 
 if __name__ == "__main__": # Ensures that the script runs only when executed directly (not when imported as a module).
     media_directory = input("Enter the directory containing media files: ")
-    media_directory = os.path.abspath(media_directory) 
+    media_directory = os.path.abspath(media_directory) # Asks the user for the media directory and converts it to an absolute path.
     output_directory = input("Enter the output directory (or press Enter to use the same directory): ")
     if not output_directory:
         output_directory = media_directory 
